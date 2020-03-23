@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body,#root,.app{
+    height: 100%;
+    width: 100%;
+}
+.home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home >.content{
+    flex: 1;
+    overflow: hidden;
+}
+.home >.botton{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #eeeeee;
+} 
+.hone{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+}
+.hone > .input{
+    height: 60px;
+    width: 100%;
+    background: #0092ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px;
+
+}
+.hone > .input input{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    outline: 0;
+    border: 0;
+    padding-left: 20px;
+}
+.pos{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.pos > span{
+    padding: 0 10px;
+}
+.hone > p {
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing:4px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.hone > .content{
+    flex: 1;
+    overflow: auto;
+    padding: 0 16px;
+}
+.hone > .sort{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    padding: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hone > .sort .active {
+    color: #ff933d;
+}
+.hone > .content > dl {
+    display: flex;
+    /* align-items: center; */
+}
+.hone > .content > dl dd{
+    padding: 0 10px;
+    flex: 1;
+}
+.hone >.content > dl dd p {
+    margin-top: 4px;
+    color: #a4a4a4;
+}
+.hone >.content > dl dd p:nth-child(2){
+    margin-top: 16px;
+}
+.hone >.content > dl dd p b {
+    font-size:17px;
+    color: #000000;
+}
+.hone >.content > dl dd .km {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 29px;
+}
+/* .header > span {
+    flex: 1;
+    text-align: center;
+} */
+.bac{
+    background: #0092ff;
+}
+.shopping{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.shopping > .nav{
+    height: 150px;
+    width: 100%;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.shopping > .nav dl{
+    display: flex;
+    width: 100%;
+}
+.shopping > .nav dl dt{
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    overflow: hidden;
+} 
+.shopping > .nav dl dd{
+    
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.iconbac{
+    color:red !important;
+}
+.shopping > .list{
+    /* flex: 1; */
+    height: 400px;
+    display: flex;
+    overflow: auto;
+}
+.shopping > .list > .rightlist{
+    width: 70%;
+    background: #ffffff;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.rightlist > .rightlistcomponent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow: auto;
+}
+.rightlist > .rightlistcomponent > dl  {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    padding: 0px 5px;
+    margin-top: 5px;
+    /* display: flex; */
+}
+/* .rightlist > .rightlistcomponent > dl >dd,dt{} */
+.rightlist > .rightlistcomponent > dl >dt{
+    float: left;
+    margin-right: 10px;
+}
+.rightlist > .rightlistcomponent > dl >dd{
+    /* padding-left: 10px; */
+    /* width: 120px; */
+    flex: right;
+    padding: 10px;
+}
+.content_p {
+    font-size: 10px;
+    color: #cccccc;
+    margin-top: 5px;
+}
+.price_p{
+    margin-top: 22px;
+    display: flex;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.price_p b{
+    color: red;
+}
+/* 添加圆角 */
+.price_p span{
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    line-height: 18px;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0092ff;
+    background: #0092ff;
+    color: #ffffff;
+}
+.shopping > .list > .listleft >div{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.shopping > .list > .listleft{
+   width: 30%;
+   background: #ffffff;
+   overflow: hidden;
+}
+.listleft > div > div{
+    height: 60px;
+    width: 100%;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 60px;
+}
+.listleft .active{
+    font-size: 18px;
+    font-weight: bolder;
+    border-left: 3px solid #ff933d;
+}
+.bottoms{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+    z-index: 9;
+}
+.bottoms dl{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.bottoms dl dt{
+    width: 60px;
+    height: 100%;
+}
+.bottoms dl dd{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottoms dl dd p{
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    
+}
+.bottoms dl dd p:nth-child(2){
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    background: #666666;
+    border-radius: 10px;
+}
+.bottoms dl dt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottoms dl dt img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* 购物车 */
+.shopp_shade{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    /* top: 100%; */
+    /* bottom: -100%; */
+    transform: translateY(100%);
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+/* 购物车动画 */
+
+.addWidths{
+    animation: widths 0.3s ease-in 1 forwards;
+}
+
+@keyframes widths{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.remoWidths{
+    animation: remoWidths 0.3s ease-in-out 1 backwards;
+}
+
+@keyframes remoWidths{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(100%);
+    }
+}
+.shopp_shade > .top{
+    width: 100%;
+    height: 36%;
+}
+.shopp_shade > .botton_list { 
+    flex: 1;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.botton_list > .shopp_nav{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+.botton_list >  .shopp_list {
+    /* flex: 1; */
+    height: 327px;
+    overflow: auto;
+}
+.botton_list >  .shopp_list > dl{
+    display: flex;
+    padding: 10px;
+}
+.botton_list >  .shopp_list > dl dd{
+    padding: 10px;
+    width: 100%;
+}
+.botton_list > .shopp_list > dl dd p:nth-child(2){
+    margin-top: 44px;
+    display: flex;
+   justify-content: space-between;
+   font-size: 18px;
+}
+.botton_list > .shopp_list > dl dd p:nth-child(2) >span:nth-child(1){
+    color: red;
+}
+.shopp_list > dl dd > p .span_add_remo{
+    width: 100px;
+    display: flex;
+}
+.shopp_list > dl dd > p .span_add_remo > span{
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    line-height: 18px;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0092ff;
+    background: #0092ff;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+/* 我的 */
+.my{
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.my > .content{
+    flex: 1;
+    overflow: hidden;
+    border-top: 1px solid #eeeeee;
+}
+.my > .content > div{
+    height: 50px;
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+
+}
+.white{
+    background: #ffffff;
+}
+
+.mycollect{
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.mycollect> .content{
+    flex: 1;
+    overflow: auto;
+    padding: 10px 16px;
+}
+.mycollect > .content > dl {
+    display: flex;
+    /* align-items: center; */
+}
+.mycollect > .content > dl dd{
+    padding: 0 10px;
+    flex: 1;
+}
+.mycollect >.content > dl dd p {
+    margin-top: 4px;
+    color: #a4a4a4;
+}
+.mycollect >.content > dl dd p:nth-child(2){
+    margin-top: 16px;
+}
+.mycollect >.content > dl dd p b {
+    font-size:17px;
+    color: #000000;
+}
+.mycollect >.content > dl dd .km {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city,.addcity {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.city > .content ,.addcity >.content {
+    flex: 1;
+    overflow: auto;
+}
+.city > .addcity,.addcity >.btncity{
+    height: 60px;
+    width: 100%;
+    background: skyblue;
+    text-align: center;
+    line-height: 60px;
+}
+.addcity > .content{
+    background: #ffffff;
+}
+.addcity  input {
+    outline: none;
+    font-size: 14px;
+    border: 0;
+    padding-left:10px;
+}
+.addcity > .content > p > span > b{
+    display: block;
+    height: 22px;
+    float: left;
+    width: 50px;
+    border: 1px solid #eeeeee;
+    color: #eeeeee;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 9px;
+
+}
+.addcity > .content > p {
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+}
+.addcity > .content > p span:last-child{
+    width: 100%;
+}
+.addcity > .content > p span:first-child{
+    width: 30%;
+    padding-left: 18px;
+}
+.sex{
+    border: 1px solid #0092ff !important;
+    color: #0092ff !important;
+}
+.city .content > div{
+    height: 80px;
+    margin-top: 2px;
+    padding: 0 9px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+.city .content > div > p{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+} 
+.city .content > div > .p{
+    justify-content: space-between;
+
+}
+.changecity{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.changecity >.content {
+    flex: 1;
+    overflow: auto;
+    background: #ffffff;
+}
+.changecity input {
+    outline: none;
+    font-size: 14px;
+    border: 0;
+    padding-left:10px;
+}
+.changecity > .content > p > span > b{
+    display: block;
+    height: 22px;
+    float: left;
+    width: 50px;
+    border: 1px solid #eeeeee;
+    color: #eeeeee;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 9px;
+
+}
+.changecity > .content > p {
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+}
+.changecity > .content > p span:last-child{
+    width: 100%;
+}
+.changecity > .content > p span:first-child{
+    width: 30%;
+    padding-left: 18px;
+}
+.changecity > .addcity {
+    height: 60px;
+    width: 100%;
+    background: skyblue;
+    text-align: center;
+    line-height: 60px;  
+}
+.bacdef{
+    background: #eeeeee;
+}
